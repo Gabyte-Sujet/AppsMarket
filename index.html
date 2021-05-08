@@ -4,21 +4,446 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>AppsMarket</title>
 </head>
 <body>
+    <div id="landing">
+        <div id="landing-bg">
+            <header>
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <i class="fas fa-mobile"></i>
+                            <i class="fas fa-mobile-alt"></i>
+                            Apps <span>Market</span> 
+                        </a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#services">services</a></li>
+                            <li><a href="#why-us">why us</a></li>
+                            <li><a href="#our-goals">our goals</a></li>
+                            <li><a href="#our-portfolio">our portfolio</a></li>
+                            <li><a href="#our-clients">our clients</a></li>
+                            <li><a href="#contact-us">contact us</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+            </header>
+            <main>
+                <div class="container">
+                    <div class="lb">
+                        <h1>we create applications with excellent technology.</h1>
+                        <p>
+                            It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page When Looking At Its Layout. The Point Of Using Lorem Ipsum Is That It Has A More-Or-Less Normal Distribution Of Letters, As Opposed To Using 'Content Here, Content Here', Making It Look Like Readable English. Many Desktop Publishing Packages And Web Page Editors Now Use Lorem Ipsum As Their Default Model Text, And A Search For 'Lorem Ipsum' Will Uncover Many Web Sites Still In Their Infancy. Various Versions Have Evolved Over The Years, Sometimes By Accident, Sometimes On Purpose (Injected Humour And The Like).
+                        </p>
+                        <button>download now <i class="fas fa-download"></i></button>
+                        <a href="#">explore more <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                    <div class="rb">
+                        <div class="iphone">
+                            <div class="iphone-screen"> 
+                                <div class="slider">
+                                    <div>
+                                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_hbl5xthi.json"  background="transparent" speed="1" loop autoplay></lottie-player>
+                                        <h5>Chooose Your Plan</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div>
+                                        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ghxcp9go.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+                                        <h5>Welcome</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div>
+                                        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_1fra2poo.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+                                        <h5>Let's start your trip</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                                <a class="skip" href="#">Skip</a>
+                                <a class="next" href="#">Next</a>  
+                            </div>  
+                            <img class="iphone-img" src="img/iphone.png" alt="iphoneimg">
+                        </div>
+                        <div class="iphone">
+                            <div class="iphone-screen"> 
+                                <div class="slider">
+                                    <div>
+                                        
+                                        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ghxcp9go.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+                                        <h5>Chooose Your Plan</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div>
+                                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_hbl5xthi.json"  background="transparent" speed="1" loop autoplay></lottie-player>
+                                        <h5>Welcome</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div>
+                                        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_1fra2poo.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+                                        <h5>Let's start your trip</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                                <a class="skip" href="#">Skip</a>
+                                <a class="next" href="#">Next</a>  
+                            </div>  
+                            <img class="iphone-img" src="img/iphone.png" alt="iphoneimg">
+                        </div>
+                        <div class="iphone">
+                            <div class="iphone-screen"> 
+                                <div class="slider">
+                                    <div>
+                                        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_1fra2poo.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+                                        <h5>Chooose Your Plan</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div>
+                                        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ghxcp9go.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+                                        <h5>Welcome</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div>
+                                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_hbl5xthi.json"  background="transparent" speed="1" loop autoplay></lottie-player>
+                                        <h5>Let's start your trip</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                                <a class="skip" href="#">Skip</a>
+                                <a class="next" href="#">Next</a>  
+                            </div>  
+                            <img class="iphone-img" src="img/iphone.png" alt="iphoneimg">
+                        </div>
+                              
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
 
-   
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">We provide various kind of service for you</h2>
+            <p class="section-par">It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page When Looking At Its Layout. The Point Of Using Lorem </p>
+            <div class="service-items">
+                <div class="item">
+                    <div class="lottie">
+                        
+                        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_awhygdgw.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
+                    </div>
+                    <h5>Unique app ui</h5>
+                    <p>It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page</p>
+                </div>
+                <div class="item">
+                    <div class="lottie">
+                        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_y3qfynfr.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+                    </div>
+                    <h5>exclient dashboard</h5>
+                    <p>It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page</p>
+                </div>
+                <div class="item">
+                    <div class="lottie">
+                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_1fra2poo.json"  background="transparent"  speed="1"   loop  autoplay></lottie-player>
+                    </div>
+                    <h5>by construction</h5>
+                    <p>It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="why-us">
+        <div class="container">
+            <h2 class="section-title">Why Us</h2>
+            <p class="section-par">It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page When Looking At Its Layout. The Point Of Using Lorem </p>
+            <div class="app">
+                <img class="style" src="img/style.png" alt="style">
+                <div class="left-item">
+                    <div class="iphone">
+                        <div class="iphone-screen"> 
+                            <div class="slider">
+                                <div>
+                                    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ghxcp9go.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+                                    <h5>Chooose Your Plan</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div>
+                                    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_hbl5xthi.json"  background="transparent" speed="1" loop autoplay></lottie-player>
+                                    <h5>Welcome</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div>
+                                    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_1fra2poo.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+                                    <h5>Let's start your trip</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <a class="skip" href="#">Skip</a>
+                            <a class="next" href="#">Next</a>  
+                        </div>  
+                        <img class="iphone-img" src="img/iphone.png" alt="iphoneimg">
+                    </div>
+                </div>
+                <div class="right-item">
+                    <h5>Built The App That Everyone Love.</h5>
+                    <p>
+                        It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page When Looking At Its Layout. The Point Of Using Lorem Ipsum Is That It Has A More-Or-Less Normal Distribution Of Letters
+                    </p>
+                    <p>
+                        It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page When Looking At Its Layout. The Point Of Using
+                    </p>
+                    <a href="#">Get More <i class="fas fa-long-arrow-alt-right"></i> </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="our-goals">
+        <div class="container">
+            <h2 class="section-title">We Completed 1200+ Projects Yearly
+                Successfully & Counting</h2>
+            <p class="section-par">It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page When Looking At Its Layout. The Point Of Using Lorem </p>
+            <div class="goal-items">
+                <div class="item">
+                    <img src="img/1.svg" alt="icon">
+                    <p><span>100+</span><br>projects complete</p>
+                </div>
+                <div class="item">
+                    <img src="img/2.svg" alt="icon">
+                    <p><span>100+</span><br>Active projects</p>
+                </div>
+                <div class="item">
+                    <img src="img/3.svg" alt="icon">
+                    <p><span>100+</span><br>client satisfied</p>
+                </div>
+                <div class="item">
+                    <img src="img/3.svg" alt="icon">
+                    <p><span>100+</span><br>country available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="our-portfolio">
+        <img class="style" src="img/rStyle.svg" alt="style">
+        <div class="container">
+            <h2 class="section-title">Our Portfolio</h2>
+            <p class="section-par">It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page When Looking At Its Layout. The Point Of Using Lorem </p>
+            <div class="portfolio-iphone">
+                <div class="iphone">
+                    <div class="iphone-screen"> 
+                        <div class="slider">
+                            <div>
+                                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ghxcp9go.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+                                <h5>Chooose Your Plan</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div>
+                                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_hbl5xthi.json"  background="transparent" speed="1" loop autoplay></lottie-player>
+                                <h5>Welcome</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div>
+                                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_1fra2poo.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+                                <h5>Let's start your trip</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <a class="skip" href="#">Skip</a>
+                        <a class="next" href="#">Next</a>  
+                    </div>  
+                    <img class="iphone-img" src="img/iphone.png" alt="iphoneimg">
+                </div>
+                <div class="iphone">
+                    <div class="iphone-screen"> 
+                        <div class="slider">
+                            <div>
+                                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ghxcp9go.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+                                <h5>Chooose Your Plan</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div>
+                                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_hbl5xthi.json"  background="transparent" speed="1" loop autoplay></lottie-player>
+                                <h5>Welcome</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div>
+                                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_1fra2poo.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+                                <h5>Let's start your trip</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <a class="skip" href="#">Skip</a>
+                        <a class="next" href="#">Next</a>  
+                    </div>  
+                    <img class="iphone-img" src="img/iphone.png" alt="iphoneimg">
+                </div>
+                <div class="iphone">
+                    <div class="iphone-screen"> 
+                        <div class="slider">
+                            <div>
+                                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ghxcp9go.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+                                <h5>Chooose Your Plan</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div>
+                                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_hbl5xthi.json"  background="transparent" speed="1" loop autoplay></lottie-player>
+                                <h5>Welcome</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div>
+                                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_1fra2poo.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+                                <h5>Let's start your trip</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <a class="skip" href="#">Skip</a>
+                        <a class="next" href="#">Next</a>  
+                    </div>  
+                    <img class="iphone-img" src="img/iphone.png" alt="iphoneimg">
+                </div>
+                <div class="iphone">
+                    <div class="iphone-screen"> 
+                        <div class="slider">
+                            <div>
+                                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ghxcp9go.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+                                <h5>Chooose Your Plan</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div>
+                                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_hbl5xthi.json"  background="transparent" speed="1" loop autoplay></lottie-player>
+                                <h5>Welcome</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div>
+                                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_1fra2poo.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+                                <h5>Let's start your trip</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <a class="skip" href="#">Skip</a>
+                        <a class="next" href="#">Next</a>  
+                    </div>  
+                    <img class="iphone-img" src="img/iphone.png" alt="iphoneimg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="our-clients">
+        <div class="container">
+            <h2 class="section-title">Our Clients Feedback</h2>
+            <p class="section-par">It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page When Looking At Its Layout. The Point Of Using Lorem </p>
+            <a href="#">Read More <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i></a>
+            <div class="client">
+                <div class="client-photo">
+                    <img src="img/client1.jpg" alt="client-photo">
+                </div>
+                <div class="client-feedback">
+                    <div class="rating">
+                        <img src="img/star.svg" alt="star">
+                        <img src="img/star.svg" alt="star">
+                        <img src="img/star.svg" alt="star">
+                        <img src="img/star.svg" alt="star">
+                        <img src="img/star.svg" alt="star">
+                    </div>
+                    <p class="comment">"Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit
+                        Voluptatem Accusantium Doloremque Laudantium,
+                        Totam Rem Aperiam, Eaque Ipsa Quae Ab Illo
+                        Modi Tem."
+                    </p>
+                    <p class="name">Maria Lysenko</p>
+                    <p class="job">Product Manager. <span>@Pixbay </span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us">
+        <div class="container">
+            <form>
+                <div>
+                    <p>Contact Us!</p>
+                    <span>There are many variations of passages of Lorem Ipsum but the majority have suffered alteration.</span>
+                </div>
+                <div>
+                    <input type="email" placeholder="Email here">
+                    <button>Send</button>
+                </div> 
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="f-wrap">
+                <div class="brand">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/pixbey.svg" alt="pixbey-logo">
+                            <span>Pixbey</span>
+                        </a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="links">
+                    <h5>Links</h5>
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">pricing</a></li>
+                        <li><a href="#">download</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">service</a></li>
+                    </ul>
+                </div>
+                <div class="support">
+                    <h5>support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">how it</a></li>
+                        <li><a href="#">features</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">reporting</a></li>
+                    </ul>
+                </div>
+                <div class="contact-us">
+                    <h5>contact-us</h5>
+                    <address>
+                        <a href="tel:+995 555 55 55 55">+995 555 55 55 55</a>
+                        <a href="mailto:youremail@gmail.com">youremail@gmail.com</a>
+                        <a href="#">Tbilisi City </a>
+                    </address>
+                </div>
+            </div>
+            <div class="terms">
+                <p>Copyright & Design By @....</p>
+                <div>
+                    <a href="#">Terms of use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

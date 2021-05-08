@@ -1,7 +1,812 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #F9F9FF;
+}
+
+.container {
+    width: 95%;
+    max-width: 1620px;
+    margin: 0 auto;
+}
+
+#landing {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0% 100% 0% 100% / 55% 0% 100% 45%;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);   
+}
+
+#landing-bg {
+    width: 100%;
+    height: 98%;
+    border-radius: 0% 100% 0% 100% / 55% 0% 100% 45%;
+    background-image: url('../img/main2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* overflow: hidden;  */
+}
+
+header {
+    padding: 40px 0;
+}
+
+header .container,
+main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+main .container {
+    align-items: flex-start
+}
+
+header .logo a {
+    font-size: 38px;
+    font-weight: 500;
+    color: #000;
+}
+
+header .logo a span {
+    
+    font-weight: 300;
+    color: dodgerblue;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    margin-left: 35px;
+}
+
+header ul li a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding: 5px 2px;
+    position: relative;
+}
+
+header ul li a::before {
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); 
+    transition: .5s;
+    
+}
+
+header ul li a:hover {
+    color: #E9ECEF;
+}
+
+header ul li a:hover::before {
+    width: 100%;
+}
+
+main {
+    height: 60%;
+    margin-top: 100px;
+}
+
+main .lb {
+    max-width: 685px;
+    flex: 1;
+    padding-right: 80px;
+}
+
+main .lb h1 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+main .lb p {
+    height: 120px;
+    overflow: hidden;
+    color: #fff;
+    line-height: 30px;
+    font-size: 23px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+main .lb button {
+    width: 200px;
+    height: 60px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+main .lb button:hover {
+    background-color: #E9ECEF;
+    text-shadow: 2px 2px 4px #ccc;
+}
+
+main .lb button:hover i{
+    transform: scale(1.2);
+}
+
+main .lb button i {
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+main .lb a {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 17px;
+    margin-left: 20px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+main .lb a:hover i {
+    margin-left: 20px
+}
+
+main .lb a i {
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+    transition: 0.5s;
+}
+
+main .rb {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    max-height: 505px;
 }
 
 
+/* ----------------Iphone-------------------- */
+
+.iphone {
+    width: 225px;
+    position:relative;
+    display: inline-block;
+}
+
+.iphone::before {
+    content: "";
+    display: block;
+    background-color: #fff;
+    position:absolute;
+    top:10%;
+    right:10%;
+    left: 10%;
+    bottom: 10%;
+    margin: auto;
+}
+
+.iphone-img{
+    width: 100%;
+    height: 100%;
+}
+
+.iphone-screen {
+    position: Absolute;
+    height: 80%;
+    width: 80%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.iphone-screen .skip,
+.iphone-screen .next {
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    border: 1px solid #F4F4F4;
+    border-radius: 25px;
+    padding: 5px 20px;
+    position: absolute;
+    bottom: 15px;
+}
+
+.iphone-screen .skip {
+    left: 0;
+    color: gray;
+}
+
+.iphone-screen .next {
+    right: 0;
+    color: dodgerblue
+}
+
+.rb .iphone:nth-child(2) {
+    width: 295px;
+}
+
+.rb .iphone:nth-child(2) lottie-player {
+    height: 225px;
+}
 
 
+/* --------------------slick-slider------------- */
+
+.slick-dotted.slick-slider {
+    height: 70%;
+    width: 100%;
+}
+
+.slick-initialized .slick-slide {
+    width: 180px;
+}
+
+.slick-list {
+    height: 100%;
+}
+
+.slick-dots li {
+    width: 20px;
+    height: 8px;
+}
+
+.slick-dots li button {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid dodgerblue;
+    border-radius: 35px;
+}
+
+.slick-dots li button:before {
+    content: "";
+    display: none;
+}
+
+li.slick-active button{
+    background-color: dodgerblue;
+}
+
+.slider h5 {
+    text-align: center;
+    color: dodgerblue;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.slider p {
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+lottie-player {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+/* --------------services---------------- */
+
+#services {
+    height: 100vh;
+    padding: 50px 0;
+}
+
+.section-title {
+    font-size: 45px;
+    font-weight: 400;
+    max-width: 670px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+}
+
+.section-par {
+    font-size: 19px;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 30px auto;
+    color: #707070;
+    text-align: center;
+    line-height: 25px;
+}
+
+#services .service-items {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+#services .service-items .item{
+    box-shadow: 0px 0px 27px -15px #000000;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    flex-basis: 428px;
+    height: 513px;
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+
+#services .service-items .item .lottie {
+    width: 100%;
+    height: 60%;
+}
+
+#services .service-items .item .lottie lottie-player {
+    margin: 0;
+    height: 100%;
+}
+
+#services .service-items .item h5 {
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    margin: 30px 0;
+}
+
+#services .service-items .item p {
+    font-size: 19px;
+    font-weight: 400;
+    color: #6B6969;
+    text-align: center;
+}
+
+
+/* -------------Why-Us------------ */
+
+#why-us {
+    height: 100vh;
+    padding: 50px 0;
+    position: relative;
+}
+
+#why-us .container {
+    height: 100%;
+}
+
+#why-us .app {
+    height: calc(100% - 150px);
+    width: 100%;
+    display: flex;
+}
+
+#why-us .app img.style{
+    position: absolute;
+    left: 0;
+    top: 180px;
+    height: 709px;
+    width: 40%;
+    max-width: 709px;
+    z-index: -1;
+}
+
+#why-us .app .left-item,
+#why-us .app .right-item  {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 195px;
+}
+
+#why-us .app .left-item .iphone {
+    width: 295px;
+    position:relative;
+    left: 5px;
+}
+
+#why-us .app .right-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align:left;
+    padding-right: 0;
+}
+
+#why-us .app .right-item h5 {
+    font-size: 35px;
+    font-weight: 500;
+    max-width: 295px;
+    line-height: 45px;
+    margin-bottom: 50px;
+}
+
+#why-us .app .right-item p {
+    font-size: 19px;
+    font-weight: 300;
+    color: #707070;
+    margin-bottom: 30px;
+    max-width: 750px;
+}
+
+#why-us .app .right-item a {
+    border: 0;
+    background-color: #fff;
+    color:#707070;
+    font-size: 23px;
+    border: 1px solid dodgerblue;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#why-us .app .right-item a i {
+    margin-left: 20px;
+    position: relative;
+    top: 2px;
+}
+
+#why-us lottie-player {
+    height: 225px;
+}
+
+/* ----------------goals-------------- */
+
+#our-goals {
+    padding: 50px 0;
+    height: 70vh;
+}
+
+#our-goals .goal-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+#our-goals .goal-items .item {
+    flex-basis: 350px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5% 5% 20% 5%; 
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+#our-goals .goal-items .item:hover {
+    box-shadow: -7px 13px 10px -16px #000000;
+    background-color: #fff;
+}
+
+#our-goals .goal-items .item:hover p{
+    color: dodgerblue;
+}
+
+#our-goals .goal-items .item img {
+    margin-right: 10px;
+}
+
+#our-goals .goal-items .item p {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+#our-goals .goal-items .item p span {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: dodgerblue;
+}
+
+#our-goals .section-par {
+    color: #241B1B;
+}
+
+/* --------------------portfolio---------------- */
+
+#our-portfolio {
+    padding: 50px 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;;
+}
+
+#our-portfolio .style {
+    position:absolute;
+    right: -250px;
+    top: 90px;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+.portfolio-iphone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-iphone .iphone {
+    width: 340px;
+    height: 620px;
+}
+
+.portfolio-iphone .iphone lottie-player {
+    height: 250px;
+}
+
+/* ------------------Clients feedback--------------------- */
+
+#our-clients {
+    padding: 50px 0 0 0;
+    height: 95vh;
+}
+
+#our-clients .container {
+    position: relative;
+}
+
+#our-clients h2 {
+    margin: 0;
+    text-align: left;
+}
+
+#our-clients p {
+    margin: 20px 0 0 0;
+    text-align: left;
+}
+
+#our-clients a {
+    position: absolute;
+    right:0;
+    top: 25px;
+    background-color: #F3F3F3;
+    color: #707070;
+    font-size: 19px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 257px;
+    height: 73px;
+    border-radius: 15px;;
+}
+
+#our-clients a i {
+    margin-left: 15px;
+    font-size: 30px;
+}
+
+#our-clients .client-photo {
+    max-width: 480px;
+    height: 100%;
+    overflow:hidden;
+}
+
+#our-clients .client-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+#our-clients .client {
+    display: flex;
+    background-color: #EFEFFE;
+    margin-top: 60px;
+    border-radius: 5px; 
+    box-shadow: 1px 4px 18px -7px rgba(0,0,0,0.75);
+    height: 548px;
+}
+
+#our-clients .client .client-photo {
+    flex: 1;
+}
+
+#our-clients .client .client-feedback {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 120px;
+}
+
+#our-clients .client .client-feedback .comment {
+    max-width: 580px;
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #222D39;
+}
+
+#our-clients .client .client-feedback .name {
+    color: #222D39;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#our-clients .client .client-feedback .job {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#our-clients .client .client-feedback .job  span {
+    color: #333697;
+    font-weight: 500;
+}
+
+/* ------------contact-us---------- */
+
+#contact-us form {
+    max-width: 1110px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #333697;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+}
+
+#contact-us form > div {
+    flex: 1;
+    padding: 0 60px;
+}
+#contact-us form div:nth-child(2) {
+    flex: 1;
+    padding: 0 60px 0 20px;
+    position: relative;
+}
+
+#contact-us form p {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 25px;
+} 
+
+#contact-us form span {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#contact-us form input {
+    width: 100%;
+    outline: none;
+    height: 70px;
+    padding: 0 150px 0 30px;
+    border: none;
+    border-radius: 35px;
+}
+
+#contact-us form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 50px;
+    background-color: #333697;
+    border-radius: 35px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 70px;
+    margin: auto;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* ------------footer---------- */
+
+footer {
+    background-color: #EBEBF8;
+    padding-top: 160px;
+    position: relative;
+    bottom: 100px;
+    z-index: -1;
+}
+
+footer .container {
+    height: 100%;
+}
+
+footer .f-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .f-wrap h5 {
+    color: #000000;
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+
+footer .f-wrap li {
+    margin-bottom: 25px;
+}
+
+footer .f-wrap li a {
+    color: #8A8A8A;
+    font-size: 19px;
+    text-transform: capitalize;
+}
+
+footer .f-wrap .logo a span {
+    color: #707070;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+footer .f-wrap .logo a {
+    display: flex;
+    align-items: center;
+}
+
+
+footer .f-wrap .logo a img {
+    margin-right: 10px;
+}
+
+footer .f-wrap .social {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .f-wrap .social a {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    color: #9C9CA8;
+    border: 1px solid #9C9CA8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .f-wrap .contact-us address {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .f-wrap .contact-us address a {
+    color: #8A8A8A;
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+footer .terms {
+    color: #677294;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .terms div a {
+    color: #677294;
+    margin: 0 30px;
+}
+
+footer .terms div a:last-child {
+    margin:0;
+    padding-left: 30px;
+    border-left: 1px solid #707070;
+}
