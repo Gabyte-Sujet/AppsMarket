@@ -92,6 +92,42 @@ header ul li a:hover::before {
     width: 100%;
 }
 
+header nav.toggle {
+    left: 0;
+}
+
+header .burger-menu {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2px 2px 2px 3px;
+    cursor: pointer;
+    display: none;
+}
+
+header .burger-menu .line{
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+    transition: transform 0.2s ease-out;
+}
+
+header .toggle .line1 {
+    transform: scale(0.9) rotate(-45deg) translate(-6px, 4px);
+}
+
+header .toggle .line2 {
+    display: none;
+}
+
+header .toggle .line3 {
+    transform: scale(0.9) rotate(45deg) translate(-6px, -4px);
+}
+
+
+
 main {
     height: 60%;
     margin-top: 100px;
@@ -132,11 +168,12 @@ main .lb button {
     border-radius: 15px;
     font-size: 17px;
     font-weight: 500;
+    transition: 0.3s;
 }
 
 main .lb button:hover {
-    background-color: #E9ECEF;
-    text-shadow: 2px 2px 4px #ccc;
+    background-color: #333697;
+    color:#fff;
 }
 
 main .lb button:hover i{
@@ -183,6 +220,7 @@ main .rb {
     width: 225px;
     position:relative;
     display: inline-block;
+    transition: 0.5s;
 }
 
 .iphone::before {
@@ -241,6 +279,10 @@ main .rb {
 
 .rb .iphone:nth-child(2) lottie-player {
     height: 225px;
+}
+
+.iphone lottie-player {
+    cursor: pointer;
 }
 
 
@@ -313,7 +355,7 @@ lottie-player {
 
 .section-title {
     font-size: 45px;
-    font-weight: 400;
+    font-weight: 500;
     max-width: 670px;
     margin: 0 auto;
     text-align: center;
@@ -346,6 +388,7 @@ lottie-player {
     display: flex;
     flex-direction: column;
     text-transform: capitalize;
+    transition: 0.5s;
 }
 
 #services .service-items .item .lottie {
@@ -407,7 +450,7 @@ lottie-player {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 195px;
+    padding-right: 195px;
 }
 
 #why-us .app .left-item .iphone {
@@ -449,6 +492,7 @@ lottie-player {
     border-radius: 10px;
     padding: 10px 15px;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 #why-us .app .right-item a i {
@@ -582,7 +626,8 @@ lottie-player {
     justify-content: center;
     width: 257px;
     height: 73px;
-    border-radius: 15px;;
+    border-radius: 15px;
+    transition: 0.5s;
 }
 
 #our-clients a i {
@@ -591,7 +636,7 @@ lottie-player {
 }
 
 #our-clients .client-photo {
-    max-width: 480px;
+    /* max-width: 480px; */
     height: 100%;
     overflow:hidden;
 }
@@ -602,6 +647,7 @@ lottie-player {
     object-fit: cover;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
+    transition: 0.5s;
 }
 
 #our-clients .client {
@@ -618,7 +664,7 @@ lottie-player {
 }
 
 #our-clients .client .client-feedback {
-    flex: 2;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -709,6 +755,7 @@ lottie-player {
     border: none;
     color: #fff;
     font-size: 16px;
+    transition: 0.5s;
 }
 
 /* ------------footer---------- */
@@ -740,6 +787,10 @@ footer .f-wrap h5 {
 
 footer .f-wrap li {
     margin-bottom: 25px;
+}
+
+footer .f-wrap .brand .logo {
+    transition:  0.5s;
 }
 
 footer .f-wrap li a {
@@ -780,6 +831,7 @@ footer .f-wrap .social a {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
 }
 
 footer .f-wrap .contact-us address {
@@ -809,4 +861,51 @@ footer .terms div a:last-child {
     margin:0;
     padding-left: 30px;
     border-left: 1px solid #707070;
+}
+
+
+/* -----hover----- */
+
+.iphone:hover,
+#services .service-items .item:hover {
+    transform: scale(0.9);
+}
+
+#why-us .app .right-item a:hover,
+#our-clients a:hover {
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+#our-clients .client-photo img:hover {
+    transform: scale(1.1)
+}
+
+#our-clients .client .client-feedback .rating img {
+    transition: 0.5s;
+}
+
+#our-clients .client .client-feedback .rating img:hover {
+    transform:rotate(360deg)
+}
+
+#contact-us form button:hover {
+    background-color: transparent;
+    color: #333697;
+    border: 1px solid #333697;
+}
+
+footer .f-wrap .social a:hover {
+    background-color: #333697;
+    color: #fff;
+    border: none;
+}
+
+footer .f-wrap .brand .logo:hover  {
+    transform: scale(1.1);
+}
+
+footer .f-wrap li a:hover,
+footer .f-wrap .contact-us address a:hover {
+    color:#333697;
 }
