@@ -13,6 +13,7 @@ body {
     width: 100%;
     height: 100vh;
     border-radius: 0% 100% 0% 100% / 55% 0% 100% 45%;
+    background-image: -o-linear-gradient(290deg, #0093E9 0%, #80D0C7 100%);
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);   
 }
 
@@ -33,14 +34,22 @@ header {
 
 header .container,
 main .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100%;
 }
 
 main .container {
-    align-items: flex-start
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start
 }
 
 header .logo a {
@@ -56,6 +65,8 @@ header .logo a span {
 }
 
 header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -79,7 +90,10 @@ header ul li a::before {
     left: 0;
     bottom: 0;
     margin: auto;
+    background-image: -o-linear-gradient(290deg, #0093E9 0%, #80D0C7 100%);
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); 
+    -webkit-transition: .5s; 
+    -o-transition: .5s; 
     transition: .5s;
     
 }
@@ -99,9 +113,15 @@ header nav.toggle {
 header .burger-menu {
     width: 40px;
     height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding: 2px 2px 2px 3px;
     cursor: pointer;
     display: none;
@@ -111,11 +131,17 @@ header .burger-menu .line{
     width: 100%;
     height: 3px;
     background-color: #000000;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    transition: -webkit-transform 0.2s ease-out;
+    -o-transition: transform 0.2s ease-out;
     transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
 }
 
 header .toggle .line1 {
-    transform: scale(0.9) rotate(-45deg) translate(-6px, 4px);
+    -webkit-transform: scale(0.9) rotate(-45deg) translate(-6px, 4px);
+        -ms-transform: scale(0.9) rotate(-45deg) translate(-6px, 4px);
+            transform: scale(0.9) rotate(-45deg) translate(-6px, 4px);
 }
 
 header .toggle .line2 {
@@ -123,7 +149,9 @@ header .toggle .line2 {
 }
 
 header .toggle .line3 {
-    transform: scale(0.9) rotate(45deg) translate(-6px, -4px);
+    -webkit-transform: scale(0.9) rotate(45deg) translate(-6px, -4px);
+        -ms-transform: scale(0.9) rotate(45deg) translate(-6px, -4px);
+            transform: scale(0.9) rotate(45deg) translate(-6px, -4px);
 }
 
 
@@ -135,7 +163,9 @@ main {
 
 main .lb {
     max-width: 685px;
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     padding-right: 80px;
 }
 
@@ -168,6 +198,8 @@ main .lb button {
     border-radius: 15px;
     font-size: 17px;
     font-weight: 500;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -177,12 +209,18 @@ main .lb button:hover {
 }
 
 main .lb button:hover i{
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 main .lb button i {
     margin-left: 10px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: transform 0.3s;
     transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 main .lb a {
@@ -201,14 +239,23 @@ main .lb a i {
     margin-left: 10px;
     position: relative;
     top: 2px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 main .rb {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100%;
     max-height: 505px;
 }
@@ -220,6 +267,8 @@ main .rb {
     width: 225px;
     position:relative;
     display: inline-block;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -373,21 +422,34 @@ lottie-player {
 }
 
 #services .service-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 50px;
 }
 
 #services .service-items .item{
-    box-shadow: 0px 0px 27px -15px #000000;
+    -webkit-box-shadow: 0px 0px 27px -15px #000000;
+            box-shadow: 0px 0px 27px -15px #000000;
     background-color: #fff;
     border-radius: 15px;
     padding: 20px;
-    flex-basis: 428px;
+    -ms-flex-preferred-size: 428px;
+        flex-basis: 428px;
     height: 513px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-transform: capitalize;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -431,6 +493,8 @@ lottie-player {
 #why-us .app {
     height: calc(100% - 150px);
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -446,10 +510,18 @@ lottie-player {
 
 #why-us .app .left-item,
 #why-us .app .right-item  {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-right: 195px;
 }
 
@@ -460,9 +532,16 @@ lottie-player {
 }
 
 #why-us .app .right-item {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     text-align:left;
     padding-right: 0;
 }
@@ -492,6 +571,8 @@ lottie-player {
     border-radius: 10px;
     padding: 10px 15px;
     cursor: pointer;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -513,24 +594,38 @@ lottie-player {
 }
 
 #our-goals .goal-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 80px;
 }
 
 #our-goals .goal-items .item {
-    flex-basis: 350px;
+    -ms-flex-preferred-size: 350px;
+        flex-basis: 350px;
     height: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border-radius: 5% 5% 20% 5%; 
+    -webkit-transition: 0.1s; 
+    -o-transition: 0.1s; 
     transition: 0.1s;
     cursor: pointer;
 }
 
 #our-goals .goal-items .item:hover {
-    box-shadow: -7px 13px 10px -16px #000000;
+    -webkit-box-shadow: -7px 13px 10px -16px #000000;
+            box-shadow: -7px 13px 10px -16px #000000;
     background-color: #fff;
 }
 
@@ -578,8 +673,12 @@ lottie-player {
 }
 
 .portfolio-iphone {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .portfolio-iphone .iphone {
@@ -620,12 +719,20 @@ lottie-player {
     color: #707070;
     font-size: 19px;
     font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 257px;
     height: 73px;
     border-radius: 15px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -643,30 +750,47 @@ lottie-player {
 #our-clients .client-photo img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 #our-clients .client {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: #EFEFFE;
     margin-top: 60px;
     border-radius: 5px; 
-    box-shadow: 1px 4px 18px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 4px 18px -7px rgba(0,0,0,0.75); 
+            box-shadow: 1px 4px 18px -7px rgba(0,0,0,0.75);
     height: 548px;
 }
 
 #our-clients .client .client-photo {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 }
 
 #our-clients .client .client-feedback {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0 120px;
 }
 
@@ -702,17 +826,25 @@ lottie-player {
     margin: 0 auto;
     background-color: #333697;
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 25px;
 }
 
 #contact-us form > div {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     padding: 0 60px;
 }
 #contact-us form div:nth-child(2) {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     padding: 0 60px 0 20px;
     position: relative;
 }
@@ -738,9 +870,15 @@ lottie-player {
 }
 
 #contact-us form button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 140px;
     height: 50px;
     background-color: #333697;
@@ -754,6 +892,8 @@ lottie-player {
     border: none;
     color: #fff;
     font-size: 16px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -772,8 +912,12 @@ footer .container {
 }
 
 footer .f-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 footer .f-wrap h5 {
@@ -789,6 +933,8 @@ footer .f-wrap li {
 }
 
 footer .f-wrap .brand .logo {
+    -webkit-transition:  0.5s;
+    -o-transition:  0.5s;
     transition:  0.5s;
 }
 
@@ -805,8 +951,12 @@ footer .f-wrap .logo a span {
 }
 
 footer .f-wrap .logo a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 
@@ -816,8 +966,12 @@ footer .f-wrap .logo a img {
 
 footer .f-wrap .social {
     margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 footer .f-wrap .social a {
@@ -827,15 +981,28 @@ footer .f-wrap .social a {
     color: #9C9CA8;
     border: 1px solid #9C9CA8;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 footer .f-wrap .contact-us address {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 footer .f-wrap .contact-us address a {
@@ -847,8 +1014,12 @@ footer .f-wrap .contact-us address a {
 footer .terms {
     color: #677294;
     padding: 40px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 footer .terms div a {
@@ -867,7 +1038,9 @@ footer .terms div a:last-child {
 
 .iphone:hover,
 #services .service-items .item:hover {
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
 }
 
 #why-us .app .right-item a:hover,
@@ -877,15 +1050,21 @@ footer .terms div a:last-child {
 }
 
 #our-clients .client-photo img:hover {
-    transform: scale(1.1)
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1)
 }
 
 #our-clients .client .client-feedback .rating img {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 #our-clients .client .client-feedback .rating img:hover {
-    transform:rotate(360deg)
+    -webkit-transform:rotate(360deg);
+        -ms-transform:rotate(360deg);
+            transform:rotate(360deg)
 }
 
 #contact-us form button:hover {
@@ -901,7 +1080,9 @@ footer .f-wrap .social a:hover {
 }
 
 footer .f-wrap .brand .logo:hover  {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 footer .f-wrap li a:hover,
@@ -932,7 +1113,8 @@ footer .f-wrap .contact-us address a:hover {
         height: 70%;
     }
     #services .service-items .item {
-        flex-basis: 30%;
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
         height: 400px;
     }
     #services .service-items .item p {
@@ -952,8 +1134,13 @@ footer .f-wrap .contact-us address a:hover {
         margin-top: 50px;
     }
     main .container {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     main .lb {
         max-width: 900px;
@@ -1008,14 +1195,18 @@ footer .f-wrap .contact-us address a:hover {
         height: auto;
     }
     .portfolio-iphone {
-        flex-wrap: wrap;
-        justify-content: space-around;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
     .portfolio-iphone .iphone {
         margin-bottom: 30px;
     }
     #our-clients .client .client-feedback {
-        flex: 1;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
         padding: 0px 60px;
     }
     footer .f-wrap li a {
@@ -1045,9 +1236,16 @@ footer .f-wrap .contact-us address a:hover {
         height: auto;
     }
 	main .container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     main {
         margin-top: 50px;
@@ -1062,13 +1260,23 @@ footer .f-wrap .contact-us address a:hover {
         width: 50%;
         z-index: 11;
         top: 0;
+        background-image: -o-linear-gradient( 290deg , #0093E9 0%, #80D0C7 100%);
         background-image: linear-gradient( 160deg , #0093E9 0%, #80D0C7 100%);
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     header ul{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     header ul li {
         margin: 0;
@@ -1078,22 +1286,32 @@ footer .f-wrap .contact-us address a:hover {
         font-size: 21px;
     }
     header .burger-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     #services .service-items {
-        flex-wrap: wrap;
-        justify-content: space-around;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
     #services .service-items .item {
-        flex-basis: 310px;
+        -ms-flex-preferred-size: 310px;
+            flex-basis: 310px;
         margin: 0 20px 30px 20px;
     }
     #our-goals .goal-items {
-        flex-wrap: wrap;
-        justify-content: space-around;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
     #contact-us form {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding: 20px 0;
     }
     #contact-us form > div {
@@ -1123,7 +1341,10 @@ footer .f-wrap .contact-us address a:hover {
 
 @media (max-width: 768px) {
 	main .rb {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         height: auto;
         max-height: none;
     }
@@ -1161,7 +1382,10 @@ footer .f-wrap .contact-us address a:hover {
         height: 85vh;
     }
     #our-clients .client {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     #our-clients .client .client-photo {
         max-width: none;
@@ -1170,7 +1394,8 @@ footer .f-wrap .contact-us address a:hover {
         padding: 0px 15px;
     }
     #our-clients .client-photo img {
-        object-fit: contain
+        -o-object-fit: contain;
+           object-fit: contain
     }
     #our-clients .client .client-feedback .comment{
         font-size: 15px;
@@ -1180,18 +1405,28 @@ footer .f-wrap .contact-us address a:hover {
         text-align: center;
     }
     footer .f-wrap {
-        flex-direction: column;
-        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
     }
     footer .f-wrap > div {
         margin-bottom: 20px;
     }
     #why-us .app {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     #why-us .app .left-item, #why-us .app .right-item {
         padding-right: 0;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     #why-us .app img.style {
         display: none;
@@ -1200,7 +1435,9 @@ footer .f-wrap .contact-us address a:hover {
         height: auto;
     }
     #why-us .app .left-item, #why-us .app .right-item {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-top: 20px;
     }
     #why-us .app .right-item h5 {
@@ -1211,8 +1448,13 @@ footer .f-wrap .contact-us address a:hover {
 
 @media (max-width: 576px) {
 	footer .terms {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding: 15px 0;
     }
     footer .terms p {
