@@ -1475,4 +1475,9 @@ footer .f-wrap .contact-us address a:hover {
     #contact-us {
         margin-top: 20px;
     }
+    main .lb a {
+        display: block;
+        margin-top: 20px;
+        margin-left: 0;
+    }
 }
